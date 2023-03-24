@@ -1,0 +1,92 @@
+<html>
+  
+  <head>
+    <title>TO DO</title>
+    <link rel="stylesheet" href=".//toDoAppstyle.css">
+  </head>
+   
+  <body>
+
+    <div class="header">
+
+     <div class="header1">
+
+      <div class="todo">
+        <h3>TO DO</h3>
+
+      </div>
+      
+      <div class="inputandcheckbox">
+
+        <form action="">
+        <input class="chceck"type="checkbox">
+        <input required id="inp" type="text"placeholder="Create a new todo...">
+      
+        <ol id="ol">
+          
+        </ol>
+        
+      </form>
+      </div>
+
+     </div>
+       
+ 
+
+
+    </div>
+
+
+    
+    
+    <script>
+
+
+
+
+const form = document.querySelector('form');//
+form.onsubmit = () => {
+  const li = document.createElement("li");
+  li.textContent = inp.value
+ 
+  ol.appendChild(li);
+  inp.value="";
+  
+  return false;
+}
+function del(element)
+{
+  element.remove;
+}
+    </script>
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
